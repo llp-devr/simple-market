@@ -14,19 +14,20 @@ These instructions will get you a copy of the project up and running on your loc
 ### Installation
 
 1. Clone the repository
-   ```bash
-   git clone https://github.com/llp-devr/simple-market.git
-   ```
+
+```bash
+git clone https://github.com/llp-devr/simple-market.git
+```
 
 2. Navigate to the project directory
 
-```
+```bash
 cd simple-market
 ```
 
 3. Copy config.ini.example to config.ini and fill in your database credentials:
 
-```
+```bash
 cp config.ini.example config.ini
 ```
 4. Edit config.ini with your preferred text editor.
@@ -35,7 +36,7 @@ cp config.ini.example config.ini
 
 6. Start the PHP server
 
-``` 
+```bash
 php -S localhost:8000
 ```
 

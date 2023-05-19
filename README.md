@@ -42,5 +42,5 @@ php -S localhost:8000
 
 7. Now, you should be able to visit http://localhost:8000 in your browser and see the application running.
 
-License
+## License
 This project is licensed under the MIT License.

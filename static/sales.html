@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Vendas</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+<nav>
+    <ul>
+        <li><a href="products.html">Produtos</a></li>
+        <li><a href="categories.html">Categorias</a></li>
+        <li><a href="sales.html">Vendas</a></li>
+    </ul>
+</nav>
+
+<h1>Produtos</h1>
+<div id="popup" class="hidden"></div>
+
+<div>
+    <h2>Carrinho</h2>
+    <table>
+        <thead>
+        <tr>
+            <td>Nome</td>
+            <td>Preço</td>
+            <td>Categoria</td>
+            <td>Tributos (%)</td>
+            <td>Tributos ($)</td>
+        </tr>
+        </thead>
+        <tbody id="cartList"></tbody>
+    </table>
+    <p id="totalPrice"></p>
+    <p id="totalTax"></p>
+</div>
+
+<div>
+    <h2>Adicione um produto ao carrinho</h2>
+    <label for="product">Title:</label>
+    <select id="product" name="product" required></select>
+
+    <br/>
+
+    <label for="addtocart">Adicionar ao Carrinho:</label>
+    <input type="submit" id="addtocart" onclick="addToCart()">
+
+    <br/>
+
+    <label for="submit">Adicionar ao Carrinho:</label>
+    <input type="submit" id="submit" onclick="sendCart()">
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+[database]
+host = "host"
+port = "5432"
+dbname = "simple_market"
+user = "user"
+password = "password"

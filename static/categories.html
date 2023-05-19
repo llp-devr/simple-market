@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Categorias</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+<nav>
+    <ul>
+        <li><a href="products.html">Produtos</a></li>
+        <li><a href="categories.html">Categorias</a></li>
+        <li><a href="sales.html">Vendas</a></li>
+    </ul>
+</nav>
+
+<h1>Categorias</h1>
+<div id="popup" class="hidden"></div>
+
+<div>
+    <h2>Categorias Existentes</h2>
+    <table>
+        <thead>
+        <tr>
+            <td>ID</td>
+            <td>Nome</td>
+            <td>Tributos</td>
+        </tr>
+        </thead>
+        <tbody id="categoryList"></tbody>
+    </table>
+</div>
+
+<div>
+    <h2>Crie uma nova categoria</h2>
+    <form id="productForm">
+        <label for="title">Título</label>
+        <input type="text" id="title" name="title" required>
+
+        <br />
+
+        <label for="tax">Tributos:</label>
+        <input type="number" step="0.01" id="tax" name="tax" required>
+
+        <br />
+
+        <button onclick="addCategory()">Criar Categoria</button>
+    </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
